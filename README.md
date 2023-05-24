@@ -7,7 +7,9 @@ Javascript library to generate you unique username provide by your name
 You shoult pass the required parameter to the function to generate username, 
 otherwise it will give you an error
 
-`generateUsername(name: String: required)`
+```javascript
+generateUsername(name: String: required)
+```
 
 # Installation
 
@@ -15,14 +17,14 @@ otherwise it will give you an error
 
 # Usage
 
-```
+```javascript
 const generateUsername = require("generate-username");
 
 console.log(generateUsername("Aman Sultan Baig"));
 ```
 
-`Expected Output`
+### Expected Output
 
-```
+```javascript
 amansultanbaig_1297
 ```
