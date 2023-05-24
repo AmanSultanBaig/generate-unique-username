@@ -17,5 +17,5 @@ console.log(generateUsername("Aman Sultan Baig"));
 `Expected Output`
 
 ```
-amansultanbaig_1297@gmail.com
+amansultanbaig_1297
 ```
