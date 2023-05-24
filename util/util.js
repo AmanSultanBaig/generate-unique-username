@@ -1,12 +1,9 @@
 const createUniqueName = (nameArr) => {
   let generatedUsername = "";
 
-  if (Array.isArray(nameArr)) {
-    for (const chunk of nameArr) {
-      generatedUsername += chunk.toLowerCase();
-    }
+  for (const chunk of nameArr) {
+    generatedUsername += chunk.toLowerCase();
   }
-
   return generatedUsername + "_" + randomNumbers();
 };
 
