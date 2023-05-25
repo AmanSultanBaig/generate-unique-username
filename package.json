@@ -10,7 +10,9 @@
   "keywords": [
     "username",
     "unique_username",
-    "username_generator"
+    "username_generator",
+    "random_username_generator",
+    "random_name_generator"
   ],
   "scripts": {
     "start": "nodemon index"
