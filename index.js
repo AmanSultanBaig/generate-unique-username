@@ -1,4 +1,4 @@
-const createUniqueName = require("./util/util.js");
+const { createUniqueName, createAutoUsername } = require("./util/util.js");
 
 const generateUsername = (name) => {
   if (!!name.trim()) {
@@ -9,4 +9,10 @@ const generateUsername = (name) => {
   }
 };
 
-module.exports = generateUsername;
+const generateRandomName = (username_length) => {
+  return createAutoUsername(username_length);
+};
+
+console.log(createAutoUsername(1));
+
+module.exports = { generateUsername, generateRandomName };

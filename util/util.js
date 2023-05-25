@@ -12,4 +12,24 @@ const randomNumbers = () => {
   return num;
 };
 
-module.exports = createUniqueName;
+const createAutoUsername = (length = 10) => {
+  if (!Number.isInteger(length)) {
+    return { error: `Invalid length, please use integer` };
+  }
+  if (length > 20 || length < 10) {
+    return {
+      error: `not valid length to generate random username, please use number between 10 to 20`,
+    };
+  }
+  let randomUsername = "";
+  let counter = 0;
+  const characters = `ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789`;
+
+  while (counter < length) {
+    randomUsername += characters.charAt(Math.floor(Math.random() * length));
+    counter += 1;
+  }
+  return randomUsername;
+};
+
+module.exports = { createUniqueName, createAutoUsername };
